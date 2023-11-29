@@ -1,0 +1,105 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, ol, dl, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 0 auto; /* Center the page horizontally */
+    max-width: 80%; /* Limit the page width to 80% */
+    box-sizing: border-box; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+/* Ensure a minimum contrast ratio for text */
+a, button {
+    color: #007BFF;
+}
+
+a:hover, a:focus, button:hover, button:focus {
+    color: #0056b3;
+}
+
+/* Enhance focus styles for keyboard navigation */
+a:focus, button:focus {
+    outline: 2px solid #007BFF;
+}
+
+/* Improve link text styling for color blindness */
+a {
+    text-decoration: underline;
+}
+
+/* Center the H1 heading */
+h1 {
+    text-align: center;
+}
+
+/* Ensure clear and simple navigation */
+nav ul {
+    list-style: none;
+    display: flex; /* Use flexbox to make the list items display in a row */
+    justify-content: center; /* Center the navigation horizontally */
+}
+
+nav li {
+    margin-right: 10px; /* Add some spacing between the navigation items */
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* Optimize layout and spacing for better navigation */
+section {
+    margin: 20px 0; /* Add top and bottom margin for spacing */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style the table for better readability */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px; /* Add top margin to the table for spacing */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Ensure responsive design for various devices */
+@media only screen and (max-width: 768px) {
+    body {
+        max-width: 100%; /* Allow full width on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Change to a column layout on small screens */
+        align-items: center; /* Center the navigation vertically */
+    }
+
+    nav li {
+        margin-right: 0; /* Remove margin for better spacing in a column layout */
+        margin-bottom: 10px; /* Add margin-bottom for spacing between items in a column */
+    }
+}
